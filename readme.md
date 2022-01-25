@@ -6,6 +6,10 @@
 npm install lesca-react-qrcode --save
 ```
 
+# Demo
+
+[Live Demo](https://jameshsu1125.github.io/lesca-react-qrcode/)
+
 # Usage
 
 ```javascript
