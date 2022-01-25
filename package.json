@@ -1,7 +1,7 @@
 {
-	"name": "npm-base-package",
-	"version": "0.0.0",
-	"description": "npm-base-package",
+	"name": "lesca-react-qrcode",
+	"version": "1.0.0",
+	"description": "qrcode generator",
 	"main": "lib/index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
@@ -45,9 +45,9 @@
 		"webpack-dev-server": "^4.7.3"
 	},
 	"author": "jamehsu1125 <jameshsu1125@gmail.com>",
-	"homepage": "https://github.com/jameshsu1125/npm-base-package",
+	"homepage": "https://github.com/jameshsu1125/lesca-react-qrcode",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:jameshsu1125/npm-base-package.git"
+		"url": "git@github.com:jameshsu1125/lesca-react-qrcode.git"
 	}
 }

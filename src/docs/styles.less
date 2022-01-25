@@ -10,9 +10,8 @@
 @c4: #ea347c;
 
 body {
+	background: @m0;
 	margin: 0;
-	background: #eee;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 	& > #app {
 		position: relative;
@@ -24,5 +23,39 @@ body {
 		padding: 100px;
 		min-height: 100vh;
 		width: 100%;
+
+		& > div:nth-child(1) {
+			background-color: @m0;
+			& > p {
+				padding: 10px;
+				background-color: #eee;
+			}
+		}
+
+		& > div {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			margin: 10px 0;
+			padding: 20px;
+			width: 500px;
+			border-radius: 5px;
+			background-color: @m0;
+			color: @m2;
+
+			& > code {
+				box-sizing: border-box;
+				padding: 20px;
+				width: 100%;
+				border: solid @m4 1px;
+				color: @m4;
+				line-height: 20px;
+
+				& > span {
+					color: @m2;
+				}
+			}
+		}
 	}
 }
