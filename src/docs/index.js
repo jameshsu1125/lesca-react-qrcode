@@ -1,28 +1,36 @@
-import React from 'react';
 import { render } from 'react-dom';
-import Qrcode from '../lib/index';
+import { Navation, Code } from './components';
+import Demo from './demo';
+
 import './styles.less';
 
-function Page() {
-	const content = window.location.href;
-	const size = '300';
+const homepage = 'https://github.com/jameshsu1125/lesca-react-qrcode';
+const name = 'lesca-react-qrcode';
+const description = 'simple exsample';
 
+const Page = () => {
 	return (
 		<>
-			<div>
-				<h1>install</h1>
-				<p>npm install lesca-react-qrcode --save</p>
-			</div>
-			<div>
-				<code>{`<Qrcode content='https://github.com/jameshsu1125/lesca-react-qrcode' size='300' />`}</code>
-				<Qrcode {...{ content, size }} />
-			</div>
-			<div>
-				<code>{`<Qrcode content='How Are You' size='300' />`}</code>
-				<Qrcode {...{ size }} content='How Are You' />
+			<Navation />
+			<div className='content'>
+				<div>
+					<h1>{name}</h1>
+					<figcaption>{description}</figcaption>
+				</div>
+				<div>
+					<h2>install</h2>
+					<Code code={`npm install ${name} --save`} theme='markup' />
+				</div>
+
+				<Demo />
+
+				<div>
+					<h2>Usage</h2>
+					<a href={homepage}>Documentation</a>
+				</div>
 			</div>
 		</>
 	);
-}
+};
 
 render(<Page />, document.getElementById('app'));
