@@ -3,7 +3,25 @@ import { useEffect } from 'react';
 import Code from '../components/code';
 import { name } from '../config';
 
-const codes = [{ title: '1. Installation', code: `npm install ${name} --save`, type: 'text' }];
+const codes = [
+  {
+    title: '1. Installation',
+    code: `npm install ${name} --save`,
+    type: 'text',
+  },
+  {
+    title: '2. Installation',
+    code: `import Qrcode from 'lesca-react-qrcode';
+
+const Components = () => {
+  const content = 'https://exsample.com/';
+  const size = '300';
+
+  return <Qrcode {...{ content, size }} />;
+};`,
+    type: 'js',
+  },
+];
 
 const Usage = () => {
   useEffect(() => {}, []);
@@ -16,9 +34,6 @@ const Usage = () => {
           <Code code={e.code} theme={e.type} />
         </div>
       ))}
-      <ButtonGroup variant='contained'>
-        <Button>click</Button>
-      </ButtonGroup>
     </div>
   );
 };
