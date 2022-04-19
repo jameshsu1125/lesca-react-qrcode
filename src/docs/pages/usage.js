@@ -10,7 +10,7 @@ const codes = [
     type: 'text',
   },
   {
-    title: '2. Installation',
+    title: '2. Usage',
     code: `import Qrcode from 'lesca-react-qrcode';
 
 const Components = () => {
