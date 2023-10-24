@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-type DefaultProps = {
+export type TProps = {
   content: string;
   size?: Number | string;
 };
 
-const Qrcode = ({ content, size }: DefaultProps) => {
-  const [qrcode, setQrcode] = useState('');
+const Qrcode = ({ content, size }: TProps) => {
+  const [qrcode, setQrcode] = useState<string>('');
 
   useEffect(() => {
     const c = encodeURIComponent(content);
