@@ -10,7 +10,7 @@ const Qrcode = ({ content, size }: TProps) => {
 
   useEffect(() => {
     const c = encodeURIComponent(content);
-    setQrcode(`http://chart.apis.google.com/chart?cht=qr&chl=${c}&chs=${size}x${size}`);
+    setQrcode(`https://quickchart.io/qr?text=${c}&size=${size}`);
   }, [size, content]);
 
   return (

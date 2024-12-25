@@ -9,7 +9,7 @@
 
 # Why use it?
 
-A qrocde Component by google qrcode generator.
+A qrocde Component by ~~google~~ quickchart qrcode generator.
 
 #### [Live Demo](https://jameshsu1125.github.io/lesca-react-qrcode/)
 
